@@ -1,0 +1,70 @@
+Task-1
+products = {
+"car items": [
+{"name": "car cover", "price": 1200, "stock": 5},
+{"name": "car perfume", "price": 250, "stock": 10},
+{"name": "car washer", "price": 500, "stock": 3}
+],
+"school items": [
+{"name": "notebook", "price": 50, "stock": 100},
+{"name": "pen", "price": 10, "stock": 200}
+],
+"home items": [
+{"name": "bucket", "price": 150, "stock": 20},
+{"name": "mop", "price": 300, "stock": 15}
+],
+"office items": [
+{"name": "printer paper", "price": 400, "stock": 50},
+{"name": "stapler", "price": 80, "stock": 25}
+]
+}
+Questions:
+1. Write a function to display all products from every category
+○ Product names should be in Camel Case
+○ Display the price of each product
+2. Write a function to update product stock
+○ If stock is less than 5, update it to 20
+3. Write a function to calculate the total store valuation
+4. Write a function to search for a product using a keyword
+○ If found, display its price and stock
+5. Write a function to find the category with the highest total value
+
+
+
+
+
+
+Task-2
+transactions = [
+{"user_id": 1, "amount": 500, "type": "credit", "timestamp": "2024-01-01 10:00:00", "status":
+"completed"},
+{"user_id": 1, "amount": 200, "type": "debit", "timestamp": "2024-01-01 11:00:00", "status":
+"completed"},
+{"user_id": 1, "amount": 100, "type": "debit", "timestamp": "2024-01-01 11:05:00", "status":
+"failed"},
+{"user_id": 2, "amount": 1000, "type": "credit", "timestamp": "2024-01-01 10:30:00",
+"status": "completed"},
+{"user_id": 2, "amount": 1200, "type": "debit", "timestamp": "2024-01-01 11:30:00",
+"status": "completed"},
+{"user_id": 2, "amount": 300, "type": "credit", "timestamp": "2024-01-01 12:00:00", "status":
+"completed"},
+]
+1. Compute Final Balance per User
+● Credit adds to balance
+● Debit subtracts from balance
+2 Detect Suspicious Users
+● The total debit amount exceeds the total credited amount
+● The user performs more than 3 transactions within any 1-hour time window
+● A single debit transaction exceeds 70% of the user’s total credited amount
+3 Latest Valid Transaction
+For each user, return the most recent transaction with status = completed.
+
+
+
+Task-3
+Write a Python function that processes this list and returns a new list of dictionaries in the
+format:
+data= ['oNe’,’twO’,’three’,’f our’, ‘fiv E’,’s Ix’,’seaven’,’eight’,’nine’,(‘ten’)]
+Expacted_output [{word: index}]
+skip number start with ”s”
+Word should be camelcases
